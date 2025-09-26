@@ -1,6 +1,8 @@
 # config.yaml
-repo_local_path: https://github.com/Shivansh1251/GitMate-AIAgent-MaintainsStreak   # absolute path where repo should live
+repo_local_path: D:/GitMate-AIAgent-MaintainsStreak/repo   # absolute path where repo should live
 repo_remote: git@github.com:Shivansh1251/GitMate-AIAgent-MaintainsStreak.git  # SSH (recommended). Or HTTPS remote.
+# "https://github.com/Shivansh1251/GitMate-AIAgent-MaintainsStreak.git"
+
 branch: main
 # Either a list of explicit files/folders to rotate or a single folder to pick files from:
 source_paths:
