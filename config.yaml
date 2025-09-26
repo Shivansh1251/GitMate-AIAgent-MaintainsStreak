@@ -1,0 +1,18 @@
+# config.yaml
+repo_local_path: https://github.com/Shivansh1251/GitMate-AIAgent-MaintainsStreak   # absolute path where repo should live
+repo_remote: git@github.com:Shivansh1251/GitMate-AIAgent-MaintainsStreak.git  # SSH (recommended). Or HTTPS remote.
+branch: main
+# Either a list of explicit files/folders to rotate or a single folder to pick files from:
+source_paths:
+  - D:\GitMate-AIAgent-MaintainsStreak\sources\index.html
+
+# upload strategy: rotate | random | single
+upload_strategy: rotate
+
+dest_subfolder: uploads      # inside repo, files will be placed under repo_local_path/uploads/
+commit_message_template: "Day {day}: Added {name} (auto by GitMate)"
+# auth: 'ssh' or 'https'
+auth_method: ssh
+# If using SSH auth and your cron/task can't access ssh-agent, set your private key path:
+ssh_key_path: /home/you/.ssh/id_ed25519
+# If using HTTPS + token (not recommended for local cron), put token in env var GITHUB_TOKEN instead
